@@ -1,38 +1,38 @@
-// Menu Data
+// Menüdaten
 const categories = [
-    { id: "appetizers", name: "Appetizers", icon: "fa-plate-wheat" },
+    { id: "appetizers", name: "Vorspeisen", icon: "fa-plate-wheat" },
     { id: "doner", name: "Döner", icon: "fa-utensils" },
     { id: "burger", name: "Burger", icon: "fa-burger" },
     { id: "pizza", name: "Pizza", icon: "fa-pizza-slice" },
     { id: "schnitzel", name: "Schnitzel", icon: "fa-drumstick-bite" },
-    { id: "vegetarian", name: "Vegetarian", icon: "fa-leaf" },
-    { id: "soups", name: "Soups", icon: "fa-bowl-food" },
+    { id: "vegetarian", name: "Vegetarisch", icon: "fa-leaf" },
+    { id: "soups", name: "Suppen", icon: "fa-bowl-food" },
     { id: "desserts", name: "Desserts", icon: "fa-ice-cream" },
-    { id: "drinks", name: "Drinks", icon: "fa-glass-water" },
+    { id: "drinks", name: "Getränke", icon: "fa-glass-water" },
   ];
   
   const menuItems = [
-    // Appetizers
+    // Vorspeisen
     {
       id: "appetizer-1",
-      name: "Sweet Potato Fries",
-      description: "Crispy sweet potato fries with garlic aioli dip",
+      name: "Süßkartoffel-Pommes",
+      description: "Knusprige Süßkartoffel-Pommes mit Knoblauch-Aioli-Dip",
       price: 4.90,
       image: "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&h=300&fit=crop",
       category: "appetizers",
     },
     {
       id: "appetizer-2",
-      name: "Classic Fries",
-      description: "Golden crispy fries with your choice of ketchup or mayo",
+      name: "Klassische Pommes",
+      description: "Goldbraune, knusprige Pommes mit Ketchup oder Mayo nach Wahl",
       price: 3.50,
       image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop",
       category: "appetizers",
     },
     {
       id: "appetizer-3",
-      name: "Onion Rings",
-      description: "Crispy battered onion rings with BBQ sauce",
+      name: "Zwiebelringe",
+      description: "Knusprige Zwiebelringe im Teigmantel mit BBQ-Sauce",
       price: 4.50,
       image: "https://images.unsplash.com/photo-1639024471283-03518883512d?w=400&h=300&fit=crop",
       category: "appetizers",
@@ -40,15 +40,15 @@ const categories = [
     {
       id: "appetizer-4",
       name: "Chicken Wings",
-      description: "Spicy buffalo wings with blue cheese dip (6 pieces)",
+      description: "Scharfe Buffalo Wings mit Blauschimmelkäse-Dip (6 Stück)",
       price: 7.90,
       image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400&h=300&fit=crop",
       category: "appetizers",
     },
     {
       id: "appetizer-5",
-      name: "Mozzarella Sticks",
-      description: "Breaded mozzarella sticks with marinara sauce",
+      name: "Mozzarella-Sticks",
+      description: "Panierte Mozzarella-Sticks mit Marinara-Sauce",
       price: 5.90,
       image: "https://images.unsplash.com/photo-1548340748-6d2b7d7da280?w=400&h=300&fit=crop",
       category: "appetizers",
@@ -56,8 +56,8 @@ const categories = [
     // Döner
     {
       id: "doner-1",
-      name: "Classic Döner Kebab",
-      description: "Tender rotating meat, fresh salad, tomatoes, onions, and signature sauce in warm pita bread",
+      name: "Klassischer Döner Kebab",
+      description: "Zartes Drehfleisch, frischer Salat, Tomaten, Zwiebeln und unsere Haussauce im warmen Fladenbrot",
       price: 7.90,
       image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop",
       category: "doner",
@@ -65,23 +65,23 @@ const categories = [
     {
       id: "doner-2",
       name: "Döner Box",
-      description: "Döner meat served with crispy fries, fresh salad, and your choice of sauce",
+      description: "Dönerfleisch mit knusprigen Pommes, frischem Salat und Sauce nach Wahl",
       price: 9.50,
       image: "https://images.unsplash.com/photo-1561651823-34feb02250e4?w=400&h=300&fit=crop",
       category: "doner",
     },
     {
       id: "doner-3",
-      name: "Döner Plate",
-      description: "Generous portion of döner meat with rice, salad, hummus, and warm bread",
+      name: "Döner Teller",
+      description: "Großzügige Portion Dönerfleisch mit Reis, Salat, Hummus und warmem Brot",
       price: 12.90,
       image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop",
       category: "doner",
     },
     {
       id: "doner-4",
-      name: "Chicken Döner",
-      description: "Marinated chicken döner with garlic sauce, lettuce, and tomatoes",
+      name: "Hähnchen-Döner",
+      description: "Marinierter Hähnchen-Döner mit Knoblauchsauce, Salat und Tomaten",
       price: 8.50,
       image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=300&fit=crop",
       category: "doner",
@@ -89,8 +89,8 @@ const categories = [
     // Burger
     {
       id: "burger-1",
-      name: "Classic Cheeseburger",
-      description: "Juicy beef patty, melted cheddar, lettuce, tomato, pickles, and special sauce",
+      name: "Klassischer Cheeseburger",
+      description: "Saftiges Rindfleisch-Patty, geschmolzener Cheddar, Salat, Tomate, Gurken und Spezialsauce",
       price: 8.90,
       image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
       category: "burger",
@@ -98,7 +98,7 @@ const categories = [
     {
       id: "burger-2",
       name: "BBQ Bacon Burger",
-      description: "Beef patty, crispy bacon, BBQ sauce, caramelized onions, and jalapeños",
+      description: "Rindfleisch-Patty, knuspriger Speck, BBQ-Sauce, karamellisierte Zwiebeln und Jalapeños",
       price: 11.50,
       image: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop",
       category: "burger",
@@ -106,7 +106,7 @@ const categories = [
     {
       id: "burger-3",
       name: "Double Smash Burger",
-      description: "Two smashed beef patties, double cheese, pickles, and mustard",
+      description: "Zwei zerdrückte Rindfleisch-Patties, doppelter Käse, Gurken und Senf",
       price: 12.90,
       image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop",
       category: "burger",
@@ -114,7 +114,7 @@ const categories = [
     {
       id: "burger-4",
       name: "Crispy Chicken Burger",
-      description: "Crispy fried chicken breast, coleslaw, and honey mustard sauce",
+      description: "Knuspriges Hähnchenbrustfilet, Krautsalat und Honig-Senf-Sauce",
       price: 9.90,
       image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&h=300&fit=crop",
       category: "burger",
@@ -123,15 +123,15 @@ const categories = [
     {
       id: "pizza-1",
       name: "Margherita",
-      description: "Classic tomato sauce, fresh mozzarella, basil, and olive oil",
+      description: "Klassische Tomatensauce, frischer Mozzarella, Basilikum und Olivenöl",
       price: 10.90,
       image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop",
       category: "pizza",
     },
     {
       id: "pizza-2",
-      name: "Pepperoni Lovers",
-      description: "Tomato sauce, mozzarella, and generous pepperoni slices",
+      name: "Pepperoni-Liebhaber",
+      description: "Tomatensauce, Mozzarella und großzügige Peperoni-Scheiben",
       price: 12.90,
       image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop",
       category: "pizza",
@@ -139,15 +139,15 @@ const categories = [
     {
       id: "pizza-3",
       name: "Döner Pizza",
-      description: "Our signature döner meat on pizza with garlic sauce and fresh vegetables",
+      description: "Unser unverkennbares Dönerfleisch auf Pizza mit Knoblauchsauce und frischem Gemüse",
       price: 14.50,
       image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop",
       category: "pizza",
     },
     {
       id: "pizza-4",
-      name: "Four Cheese",
-      description: "Mozzarella, gorgonzola, parmesan, and goat cheese on creamy base",
+      name: "Vier Käse",
+      description: "Mozzarella, Gorgonzola, Parmesan und Ziegenkäse auf cremiger Basis",
       price: 13.90,
       image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
       category: "pizza",
@@ -156,81 +156,81 @@ const categories = [
     {
       id: "schnitzel-1",
       name: "Wiener Schnitzel",
-      description: "Classic breaded veal cutlet served with lemon and potato salad",
+      description: "Klassisches paniertes Kalbsschnitzel serviert mit Zitrone und Kartoffelsalat",
       price: 14.90,
       image: "https://images.unsplash.com/photo-1599921841143-819065a55cc6?w=400&h=300&fit=crop",
       category: "schnitzel",
     },
     {
       id: "schnitzel-2",
-      name: "Jäger Schnitzel",
-      description: "Breaded pork cutlet with creamy mushroom sauce and spätzle",
+      name: "Jägerschnitzel",
+      description: "Paniertes Schweineschnitzel mit cremiger Pilzsauce und Spätzle",
       price: 15.90,
       image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&h=300&fit=crop",
       category: "schnitzel",
     },
     {
       id: "schnitzel-3",
-      name: "Chicken Schnitzel",
-      description: "Crispy breaded chicken breast with fries and coleslaw",
+      name: "Hähnchenschnitzel",
+      description: "Knuspriges paniertes Hähnchenbrustfilet mit Pommes und Krautsalat",
       price: 12.90,
       image: "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=400&h=300&fit=crop",
       category: "schnitzel",
     },
-    // Vegetarian
+    // Vegetarisch
     {
       id: "veg-1",
-      name: "Falafel Wrap",
-      description: "Crispy falafel, hummus, tabbouleh, and tahini in warm flatbread",
+      name: "Falafel-Wrap",
+      description: "Knusprige Falafel, Hummus, Taboulé und Tahini im warmen Fladenbrot",
       price: 7.90,
       image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop",
       category: "vegetarian",
     },
     {
       id: "veg-2",
-      name: "Veggie Burger",
-      description: "Grilled plant-based patty with avocado, sprouts, and chipotle mayo",
+      name: "Veggie-Burger",
+      description: "Gegrilltes pflanzliches Patty mit Avocado, Sprossen und Chipotle-Mayo",
       price: 10.50,
       image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&h=300&fit=crop",
       category: "vegetarian",
     },
     {
       id: "veg-3",
-      name: "Halloumi Plate",
-      description: "Grilled halloumi cheese with Mediterranean salad, olives, and pita",
+      name: "Halloumi-Teller",
+      description: "Gegrillter Halloumi-Käse mit mediterranem Salat, Oliven und Pita",
       price: 11.90,
       image: "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=400&h=300&fit=crop",
       category: "vegetarian",
     },
     {
       id: "veg-4",
-      name: "Mezze Platter",
-      description: "Hummus, baba ganoush, falafel, tabbouleh, and warm pita bread",
+      name: "Mezze-Platte",
+      description: "Hummus, Baba Ganoush, Falafel, Taboulé und warmes Fladenbrot",
       price: 13.90,
       image: "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=400&h=300&fit=crop",
       category: "vegetarian",
     },
-    // Soups
+    // Suppen
     {
       id: "soup-1",
-      name: "Lentil Soup",
-      description: "Traditional red lentil soup with cumin and fresh lemon",
+      name: "Linsensuppe",
+      description: "Traditionelle rote Linsensuppe mit Kreuzkümmel und frischer Zitrone",
       price: 5.50,
       image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop",
       category: "soups",
     },
     {
       id: "soup-2",
-      name: "Chicken Noodle Soup",
-      description: "Hearty chicken broth with tender chicken, vegetables, and noodles",
+      name: "Hühnernudelsuppe",
+      description: "Herzhafte Hühnerbrühe mit zartem Hühnchen, Gemüse und Nudeln",
       price: 6.50,
       image: "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&h=300&fit=crop",
       category: "soups",
     },
     {
       id: "soup-3",
-      name: "Tomato Basil Soup",
-      description: "Creamy tomato soup with fresh basil and garlic croutons",
+      name: "Tomaten-Basilikum-Suppe",
+      description: "Cremige Tomatensuppe mit frischem Basilikum und Knoblauch-Croutons",
       price: 5.90,
       image: "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=400&h=300&fit=crop",
       category: "soups",
@@ -239,7 +239,7 @@ const categories = [
     {
       id: "dessert-1",
       name: "Baklava",
-      description: "Traditional Turkish pastry with pistachios and honey",
+      description: "Traditionelles türkisches Gebäck mit Pistazien und Honig",
       price: 4.50,
       image: "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=400&h=300&fit=crop",
       category: "desserts",
@@ -247,7 +247,7 @@ const categories = [
     {
       id: "dessert-2",
       name: "Künefe",
-      description: "Warm cheese dessert with syrup and pistachios",
+      description: "Warmes Käsedessert mit Sirup und Pistazien",
       price: 5.90,
       image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=400&h=300&fit=crop",
       category: "desserts",
@@ -255,23 +255,23 @@ const categories = [
     {
       id: "dessert-3",
       name: "Tiramisu",
-      description: "Classic Italian dessert with espresso and mascarpone",
+      description: "Klassisches italienisches Dessert mit Espresso und Mascarpone",
       price: 5.50,
       image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop",
       category: "desserts",
     },
     {
       id: "dessert-4",
-      name: "Chocolate Lava Cake",
-      description: "Warm chocolate cake with molten center and vanilla ice cream",
+      name: "Schokoladen-Lava-Kuchen",
+      description: "Warmer Schokoladenkuchen mit flüssigem Kern und Vanilleeis",
       price: 6.50,
       image: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop",
       category: "desserts",
     },
     {
       id: "dessert-5",
-      name: "Ice Cream Selection",
-      description: "3 scoops of your choice: Vanilla, Chocolate, Strawberry or Pistachio",
+      name: "Eis-Auswahl",
+      description: "3 Kugeln nach Wahl: Vanille, Schokolade, Erdbeere oder Pistazie",
       price: 4.00,
       image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&h=300&fit=crop",
       category: "desserts",
@@ -279,40 +279,40 @@ const categories = [
     {
       id: "dessert-6",
       name: "Sütlaç",
-      description: "Turkish rice pudding with cinnamon and rosewater",
+      description: "Türkischer Milchreis mit Zimt und Rosenwasser",
       price: 3.90,
       image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
       category: "desserts",
     },
-    // Drinks
+    // Getränke
     {
       id: "drink-1",
       name: "Ayran",
-      description: "Traditional Turkish yogurt drink, refreshing and cold",
+      description: "Traditionelles türkisches Joghurtgetränk, erfrischend und kalt",
       price: 2.50,
       image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-2",
-      name: "Fresh Lemonade",
-      description: "Homemade lemonade with fresh mint leaves",
+      name: "Frische Limonade",
+      description: "Hausgemachte Limonade mit frischen Minzblättern",
       price: 3.50,
       image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-3",
-      name: "Turkish Tea",
-      description: "Traditional black tea served in a classic tulip glass",
+      name: "Türkischer Tee",
+      description: "Traditioneller schwarzer Tee, serviert im klassischen Tulpenglas",
       price: 2.00,
       image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-4",
-      name: "Soft Drinks",
-      description: "Coca-Cola, Fanta, Sprite, or sparkling water",
+      name: "Softdrinks",
+      description: "Coca-Cola, Fanta, Sprite oder Mineralwasser",
       price: 2.50,
       image: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=400&h=300&fit=crop",
       category: "drinks",
@@ -320,47 +320,47 @@ const categories = [
     {
       id: "drink-5",
       name: "Mango Lassi",
-      description: "Creamy mango yogurt drink from India",
+      description: "Cremiges Mango-Joghurt-Getränk aus Indien",
       price: 3.90,
       image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-6",
-      name: "Fresh Orange Juice",
-      description: "Freshly squeezed orange juice",
+      name: "Frischer Orangensaft",
+      description: "Frisch gepresster Orangensaft",
       price: 4.50,
       image: "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-7",
-      name: "Turkish Coffee",
-      description: "Traditionally prepared Turkish mocha",
+      name: "Türkischer Kaffee",
+      description: "Traditionell zubereiteter türkischer Mokka",
       price: 2.90,
       image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-8",
-      name: "Peach Iced Tea",
-      description: "Refreshing homemade iced tea",
+      name: "Pfirsich-Eistee",
+      description: "Erfrischender hausgemachter Eistee",
       price: 3.00,
       image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-9",
-      name: "Mineral Water",
-      description: "Still or sparkling (0.5L)",
+      name: "Mineralwasser",
+      description: "Still oder spritzig (0,5L)",
       price: 2.00,
       image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-10",
-      name: "Apple Spritzer",
-      description: "Refreshing apple juice with sparkling water",
+      name: "Apfelschorle",
+      description: "Erfrischender Apfelsaft mit Mineralwasser",
       price: 2.90,
       image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop",
       category: "drinks",
@@ -368,15 +368,15 @@ const categories = [
     {
       id: "drink-11",
       name: "Energy Drink",
-      description: "Red Bull or Monster (250ml)",
+      description: "Red Bull oder Monster (250ml)",
       price: 3.50,
       image: "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?w=400&h=300&fit=crop",
       category: "drinks",
     },
     {
       id: "drink-12",
-      name: "Milkshake",
-      description: "Vanilla, Chocolate or Strawberry with whipped cream",
+      name: "Milchshake",
+      description: "Vanille, Schokolade oder Erdbeere mit Schlagsahne",
       price: 4.50,
       image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop",
       category: "drinks",
@@ -387,7 +387,6 @@ const categories = [
   let cart = [];
   let activeCategory = null;
   let searchQuery = "";
-  let isDark = true;
   // Toggle variable to show/hide price breakdown details
   const SHOW_PRICE_BREAKDOWN = true; // Set to true to show subtotal, extras, delivery; false to show only total
   
@@ -404,35 +403,6 @@ const categories = [
     hasSubscription: false,
     showOrderSummary: false,
   };
-  
-  // Theme Management
-  function initTheme() {
-    const saved = localStorage.getItem("theme");
-    isDark = saved === "dark";
-    updateTheme();
-  }
-  
-  function toggleTheme() {
-    isDark = !isDark;
-    updateTheme();
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  }
-  
-  function updateTheme() {
-    const root = document.documentElement;
-    const themeIcon = document.querySelector(".theme-icon");
-    if (isDark) {
-      root.classList.add("dark");
-      if (themeIcon) {
-        themeIcon.className = "fa-solid fa-sun text-warning theme-icon";
-      }
-    } else {
-      root.classList.remove("dark");
-      if (themeIcon) {
-        themeIcon.className = "fa-solid fa-moon theme-icon";
-      }
-    }
-  }
   
   // Cart Management
   function addToCart(item) {
@@ -476,7 +446,7 @@ const categories = [
     return cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   }
   
-  const MINIMUM_ORDER_VALUE = 2; // Minimum order value in euros
+  const MINIMUM_ORDER_VALUE = 2; // Mindestbestellwert in Euro
   
   function getCartTotals() {
     const subtotal = getTotalPrice();
@@ -572,8 +542,8 @@ const categories = [
         searchResults.style.display = "block";
         const title = searchResults.querySelector(".search-results-title");
         const count = searchResults.querySelector(".search-results-count");
-        if (title) title.textContent = `Search Results for "${searchQuery}"`;
-        if (count) count.textContent = `${filteredItems.length} ${filteredItems.length === 1 ? "item" : "items"} found`;
+        if (title) title.textContent = `Suchergebnisse für "${searchQuery}"`;
+        if (count) count.textContent = `${filteredItems.length} ${filteredItems.length === 1 ? "Artikel" : "Artikel"} gefunden`;
       }
     } else {
       if (searchResults) searchResults.style.display = "none";
@@ -613,7 +583,7 @@ const categories = [
         header.className = "category-header";
         header.innerHTML = `
           <h2 class="category-title">${getCategoryName(categoryId)}</h2>
-          <span class="category-count">${items.length} items</span>
+          <span class="category-count">${items.length} Artikel</span>
         `;
 
         const grid = document.createElement("div");
@@ -661,7 +631,7 @@ const categories = [
         <p class="menu-card-description">${item.description}</p>
         <button class="menu-card-btn" data-item-id="${item.id}">
           <i class="fa-solid fa-plus"></i>
-          Add to Cart
+          Zum Warenkorb
         </button>
       </div>
     `;
@@ -670,10 +640,10 @@ const categories = [
     btn.addEventListener("click", () => {
       addToCart(item);
       btn.classList.add("added");
-      btn.innerHTML = '<i class="fa-solid fa-check"></i> Added!';
+      btn.innerHTML = '<i class="fa-solid fa-check"></i> Hinzugefügt!';
       setTimeout(() => {
         btn.classList.remove("added");
-        btn.innerHTML = '<i class="fa-solid fa-plus"></i> Add to Cart';
+        btn.innerHTML = '<i class="fa-solid fa-plus"></i> Zum Warenkorb';
       }, 300);
     });
   
@@ -723,7 +693,7 @@ const categories = [
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <div>
-                <h2 class="cart-header-title">Order Summary</h2>
+                <h2 class="cart-header-title">Bestellübersicht</h2>
               </div>
             </div>
             <button class="cart-close-btn" id="closeCart">
@@ -734,7 +704,7 @@ const categories = [
             <div class="order-items-summary">
               <h3>
                 <i class="fa-solid fa-receipt"></i>
-                Your Order (${totalItems} items)
+                Ihre Bestellung (${totalItems} Artikel)
               </h3>
               <div>
                 ${cart.map(item => `
@@ -748,12 +718,12 @@ const categories = [
             <div class="price-breakdown">
               ${SHOW_PRICE_BREAKDOWN ? `
               <div class="price-row">
-                <span>Subtotal</span>
+                <span>Zwischensumme</span>
                 <span>${totals.subtotal.toFixed(2)}€</span>
               </div>
               ` : ""}
               <div class="price-row">
-                <span>Delivery Fee</span>
+                <span>Liefergebühr</span>
                 <span>${totals.deliveryFee.toFixed(2)}€</span>
               </div>
               ${totals.extras > 0 ? `
@@ -763,7 +733,7 @@ const categories = [
                 </div>
               ` : ""}
               <div class="price-row-total">
-                <span>Total</span>
+                <span>Gesamt</span>
                 <span>${totals.total.toFixed(2)}€</span>
               </div>
             </div>
@@ -773,12 +743,12 @@ const categories = [
                 <div class="subscription-option-content">
                   <div class="subscription-option-header">
                     <i class="fa-solid fa-crown"></i>
-                    <span class="subscription-option-title">Free Subscription</span>
+                    <span class="subscription-option-title">Kostenloses Abonnement</span>
                   </div>
                   <p class="subscription-option-text">
-                    Always get the fastest delivery and exclusive deals!<br>
-                    First week 0.00€, then 4.99€/month. 
-                    Cancel anytime. 
+                    Immer die schnellste Lieferung und exklusive Angebote erhalten!<br>
+                    Erste Woche 0,00€, dann 4,99€/Monat. 
+                    Jederzeit kündbar. 
                   </p>
                 </div>
               </label>
@@ -789,16 +759,16 @@ const categories = [
               <div class="minimum-order-warning" style="background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem;">
                 <div style="display: flex; align-items: center; gap: 0.5rem; color: rgb(234, 179, 8);">
                   <i class="fa-solid fa-exclamation-triangle"></i>
-                  <span style="font-size: 0.875rem; font-weight: 500;">Minimum order value: ${MINIMUM_ORDER_VALUE}€</span>
+                  <span style="font-size: 0.875rem; font-weight: 500;">Mindestbestellwert: ${MINIMUM_ORDER_VALUE}€</span>
                 </div>
                 <p style="font-size: 0.75rem; color: rgb(115, 115, 115); margin-top: 0.25rem;">
-                  ${remainingAmount.toFixed(2)}€ more to reach the minimum order value!
+                  ${remainingAmount.toFixed(2)}€ mehr, um den Mindestbestellwert zu erreichen!
                 </p>
               </div>
             ` : ""}
             <button class="cart-checkout-btn" id="confirmOrder" ${!meetsMinimumOrder ? "disabled style='opacity: 0.5; cursor: not-allowed;'" : ""}>
               <i class="fa-solid fa-check"></i>
-              Confirm Order - ${totals.total.toFixed(2)}€
+              Bestellung bestätigen - ${totals.total.toFixed(2)}€
             </button>
           </div>
         </div>
@@ -811,8 +781,8 @@ const categories = [
                 <i class="fa-solid fa-shopping-bag"></i>
               </div>
               <div>
-                <h2 class="cart-header-title">Cart</h2>
-                <p class="cart-header-subtitle">${totalItems} items</p>
+                <h2 class="cart-header-title">Warenkorb</h2>
+                <p class="cart-header-subtitle">${totalItems} Artikel</p>
               </div>
             </div>
             <button class="cart-close-btn" id="closeCart">
@@ -825,8 +795,8 @@ const categories = [
                 <div class="cart-empty-icon">
                   <i class="fa-solid fa-basket-shopping"></i>
                 </div>
-                <h3>Your cart is empty</h3>
-                <p>Add some delicious dishes!</p>
+                <h3>Ihr Warenkorb ist leer</h3>
+                <p>Fügen Sie einige leckere Gerichte hinzu!</p>
               </div>
             ` : `
               <div class="cart-items">
@@ -861,7 +831,7 @@ const categories = [
                   <div class="cart-extras-header" id="extrasHeader">
                     <div class="cart-extras-header-left">
                       <i class="fa-solid fa-sliders"></i>
-                      <span class="cart-extras-title">Extras & Options</span>
+                      <span class="cart-extras-title">Extras & Optionen</span>
                       ${SHOW_PRICE_BREAKDOWN && totals.extras > 0 ? `
                         <span class="cart-extras-badge">+${totals.extras.toFixed(2)}€</span>
                       ` : ""}
@@ -872,30 +842,30 @@ const categories = [
                     <div class="cart-extras-section">
                       <div class="cart-extras-section-title">
                         <i class="fa-solid fa-heart"></i>
-                        <span>Tip for the driver</span>
+                        <span>Trinkgeld für den Fahrer</span>
                       </div>
                       <div class="tip-buttons">
                         ${[0, 0.05, 0.10, 0.15, 0.20].map(percent => `
                           <button class="tip-btn ${cartState.selectedTipPercent === percent ? "active" : ""}" 
                                   data-tip="${percent}">
-                            ${percent === 0 ? "None" : `${percent * 100}%`}
+                            ${percent === 0 ? "Kein" : `${percent * 100}%`}
                           </button>
                         `).join("")}
                       </div>
                       ${cartState.selectedTipPercent > 0 ? `
-                        <p class="tip-amount">Tip: ${totals.tipAmount.toFixed(2)}€</p>
+                        <p class="tip-amount">Trinkgeld: ${totals.tipAmount.toFixed(2)}€</p>
                       ` : ""}
                     </div>
                     <div class="cart-extras-section">
                       <div class="cart-extras-section-title">
                         <i class="fa-solid fa-shield-halved" style="color: #3b82f6;"></i>
-                        <span>Delivery Insurance</span>
+                        <span>Lieferversicherung</span>
                       </div>
                       <label class="extra-option">
                         <input type="checkbox" id="insuranceYes" ${cartState.hasInsurance ? "checked" : ""}>
                         <div class="extra-option-content">
                           <div class="extra-option-header">
-                            <span class="extra-option-title">Yes, I want to be insured against damage and incase of cold food!</span>
+                            <span class="extra-option-title">Ja, ich möchte gegen Schäden und für den Fall von kaltem Essen versichert sein!</span>
                           </div>
                         </div>
                         <span class="extra-option-price">+0.99€</span>
@@ -904,7 +874,7 @@ const categories = [
                         <input type="checkbox" id="insuranceNo" ${!cartState.hasInsurance ? "checked" : ""}>
                         <div class="extra-option-content">
                           <div class="extra-option-header">
-                            <span class="extra-option-title">No, I don't want delivery insurance</span>
+                            <span class="extra-option-title">Nein, ich möchte keine Lieferversicherung</span>
                           </div>
                         </div>
                       </label>
@@ -912,13 +882,13 @@ const categories = [
                     <div class="cart-extras-section">
                       <div class="cart-extras-section-title">
                         <i class="fa-solid fa-leaf" style="color: #22c55e;"></i>
-                        <span>CO2-Neutral Delivery</span>
+                        <span>CO2-neutrale Lieferung</span>
                       </div>
                       <label class="extra-option">
                         <input type="checkbox" id="co2Yes" ${cartState.isCO2Neutral ? "checked" : ""}>
                         <div class="extra-option-content">
                           <div class="extra-option-header">
-                            <span class="extra-option-title">Yes, I want to be CO2-Neutral!</span>
+                            <span class="extra-option-title">Ja, ich möchte CO2-neutral sein!</span>
                           </div>
                         </div>
                         <span class="extra-option-price">+0.99€</span>
@@ -927,7 +897,7 @@ const categories = [
                         <input type="checkbox" id="co2No" ${!cartState.isCO2Neutral ? "checked" : ""}>
                         <div class="extra-option-content">
                           <div class="extra-option-header">
-                            <span class="extra-option-title">No, I am not interested.</span>
+                            <span class="extra-option-title">Nein, das möchte ich nicht.</span>
                           </div>
                         </div>
                       </label>
@@ -941,7 +911,7 @@ const categories = [
             <div class="cart-footer">
               <div class="cart-summary">
                 <div class="cart-summary-row">
-                  <span>Subtotal</span>
+                  <span>Zwischensumme</span>
                   <span>${totals.subtotal.toFixed(2)}€</span>
                 </div>
                 ${totals.extras > 0 ? `
@@ -952,23 +922,23 @@ const categories = [
                 ` : ""}
               </div>
               <div class="cart-total">
-                <span class="cart-total-label">Total</span>
+                <span class="cart-total-label">Gesamt</span>
                 <span class="cart-total-value">${(totals.subtotal + totals.extras).toFixed(2)}€</span>
               </div>
               ${!meetsMinimumOrder ? `
                 <div class="minimum-order-warning" style="background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem;">
                   <div style="display: flex; align-items: center; gap: 0.5rem; color: rgb(234, 179, 8);">
                     <i class="fa-solid fa-exclamation-triangle"></i>
-                    <span style="font-size: 0.875rem; font-weight: 500;">Minimum order value: ${MINIMUM_ORDER_VALUE}€</span>
+                    <span style="font-size: 0.875rem; font-weight: 500;">Mindestbestellwert: ${MINIMUM_ORDER_VALUE}€</span>
                   </div>
                   <p style="font-size: 0.75rem; color: rgb(115, 115, 115); margin-top: 0.25rem;">
-                    ${remainingAmount.toFixed(2)}€ more to reach the minimum order value!
+                    ${remainingAmount.toFixed(2)}€ mehr, um den Mindestbestellwert zu erreichen!
                   </p>
                 </div>
               ` : ""}
               <button class="cart-checkout-btn" id="proceedCheckout" ${!meetsMinimumOrder ? "disabled style='opacity: 0.5; cursor: not-allowed;'" : ""}>
                 <i class="fa-solid fa-bag-shopping"></i>
-                Continue to Checkout
+                Weiter zur Kasse
               </button>
             </div>
           ` : ""}
@@ -1211,12 +1181,6 @@ const categories = [
   
   // Initialize
   document.addEventListener("DOMContentLoaded", () => {
-    // Theme
-    initTheme();
-    const themeToggle = document.getElementById("themeToggle");
-    if (themeToggle) {
-      themeToggle.addEventListener("click", toggleTheme);
-    }
   
     // Categories
     document.querySelectorAll(".category-btn[data-category='all']").forEach(btn => {
