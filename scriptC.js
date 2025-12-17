@@ -745,10 +745,10 @@ const categories = [
                     <i class="fa-solid fa-crown"></i>
                     <span class="subscription-option-title">Kostenloses Abonnement</span>
                   </div>
-                  <p class="subscription-option-text">
+                 <p class="subscription-option-text">
                     Immer die schnellste Lieferung und exklusive Angebote erhalten!<br>
-                    Erste Woche 0,00€, dann 4,99€/Monat. 
-                    Jederzeit kündbar. 
+                    Testen Sie es jetzt für 0,00€.
+                    Danach 4,99€ pro Monat! Jederzeit kündbar. 
                   </p>
                 </div>
               </label>
@@ -865,7 +865,7 @@ const categories = [
                         <input type="checkbox" id="insuranceYes" ${cartState.hasInsurance ? "checked" : ""}>
                         <div class="extra-option-content">
                           <div class="extra-option-header">
-                            <span class="extra-option-title">Ja, ich möchte gegen Schäden und für den Fall von kaltem Essen versichert sein!</span>
+                            <span class="extra-option-title">Ja, ich möchte gegen kaltes Essen und eventuelle Schäde versichert sein</span>
                           </div>
                         </div>
                         <span class="extra-option-price">+0.99€</span>
@@ -914,6 +914,10 @@ const categories = [
                   <span>Zwischensumme</span>
                   <span>${totals.subtotal.toFixed(2)}€</span>
                 </div>
+                <div class="cart-summary-row">
+                  <span>Liefergebühr</span>
+                  <span>${totals.deliveryFee.toFixed(2)}€</span>
+                </div>
                 ${totals.extras > 0 ? `
                   <div class="cart-summary-row">
                     <span>Extras</span>
@@ -923,7 +927,7 @@ const categories = [
               </div>
               <div class="cart-total">
                 <span class="cart-total-label">Gesamt</span>
-                <span class="cart-total-value">${(totals.subtotal + totals.extras).toFixed(2)}€</span>
+                <span class="cart-total-value">${(totals.subtotal + totals.extras + totals.deliveryFee).toFixed(2)}€</span>
               </div>
               ${!meetsMinimumOrder ? `
                 <div class="minimum-order-warning" style="background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem;">
