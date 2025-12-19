@@ -54,4 +54,22 @@ Jetzt siehst du eine Tabelle, z.B.:
 *   `has_insurance = true`: 50 Käufe, 1200€ Umsatz
 *   `has_insurance = false`: 30 Käufe, 500€ Umsatz
 
-Wiederhole dies für CO2 und Abo in eigenen Tabs oder neuen Berichten.
+## 4. Profi-Tipp: Einzelne Transaktionen als Tabelle (Flat Table)
+
+Wenn du eine Liste möchtest, in der **jede Zeile eine Bestellung** ist (wie in Excel), konfiguriere den Bericht so:
+
+1.  **Dimensionen importieren**: Füge zusätzlich `Transaktions-ID` (Transaction ID) hinzu.
+2.  **Zeilen (Rows)** konfiguriere:
+    *   Ziehe `Transaktions-ID` an die erste Stelle.
+    *   Ziehe danach deine anderen Dimensionen (`Versicherung`, `CO2`, `Abo`) ebenfalls in den Bereich **Zeilen**.
+3.  **WICHTIG:** Gehe rechts in den Einstellungen zum Punkt **"Verschachtelte Zeilen" (Nested rows)** und stelle ihn auf **"Nein"**.
+    *   Dadurch stehen die Werte nebeneinander statt untereinander!
+4.  **Werte (Values)**:
+    *   Ziehe hier deine Zahlen rein (`Trinkgeld Prozent`, `Gesamtwert`).
+
+**Das Ergebnis sieht dann so aus:**
+
+| Transaktions-ID | Versicherung | CO2 | Abo | Trinkgeld % | Gesamtwert |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| ORDER_12345... | true | false | false | 10 | 25.50€ |
+| ORDER_67890... | false | true | true | 5 | 42.00€ |
