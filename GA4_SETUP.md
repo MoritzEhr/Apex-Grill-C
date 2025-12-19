@@ -73,3 +73,27 @@ Wenn du eine Liste möchtest, in der **jede Zeile eine Bestellung** ist (wie in 
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | ORDER_12345... | true | false | false | 10 | 25.50€ |
 | ORDER_67890... | false | true | true | 5 | 42.00€ |
+
+## 5. Deine Wunsch-Ansicht: Der Detaillierte Einkaufs-Bericht
+
+Um genau das zu sehen, was du möchtest ("Ein Einkauf pro Zeile mit allen Infos"), baust du den Bericht so:
+
+**Zeilen (in dieser Reihenfolge):**
+1.  `Transaktions-ID`
+2.  `Stadt` (Woher kommt er?)
+3.  `Geschlecht` (siehe Warnung unten!)
+4.  `Versicherung gebucht`
+5.  `Abonnement`
+6.  `Artikelname` (Achtung: Das macht die Zeilen mehrfach!)
+
+**Werte:**
+1.  `Gesamtwert (Custom)`
+2.  `Trinkgeld Prozent`
+
+### ⚠️ Wichtige Einschränkungen von Google Analytics
+
+1.  **Artikel in einer Zeile:** GA4 kann nicht "Burger, Pommes, Cola" in *eine* Zelle schreiben. Wenn du "Artikelname" hinzufügst, wird die Bestell-ID 3x untereinander auftauchen (einmal für jedes Produkt). Ohne "Artikelname" hast du genau eine Zeile pro Bestellung.
+2.  **Geschlecht (Datenschutz):** Google schützt die Privatsphäre sehr streng. Wenn du versuchst, das **Geschlecht** zusammen mit einer **Transaktions-ID** anzuzeigen, wird Google diese Zeilen oft **ausblenden (Thresholding)**, weil man sonst einzelne Personen identifizieren könnte.
+    *   *Empfehlung:* Lass das Geschlecht in der Einzelansicht weg und schau es dir lieber in einer großen statistischen Übersicht an.
+
+So bekommst du die sauberste Liste!
