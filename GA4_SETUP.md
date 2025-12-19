@@ -31,7 +31,27 @@ Für das Trinkgeld (da es eine Zahl/Währung ist).
 | **Trinkgeld Prozent** | Ereignis | `tip_percentage` | Standard (Zahl) |
 | **Gesamtwert (Custom)** | Ereignis | `total_cart_value` | Währung |
 
-## 3. Ergebnis
-Nach ca. 24-48 Stunden kannst du diese Daten in deinen Berichten nutzen, z.B. im "Explore"-Bereich, um zu sehen:
-- "Wie viel Trinkgeld wurde durchschnittlich gegeben?"
-- "Wie viel % der Nutzer wählen die CO2-neutrale Lieferung?"
+## 3. Berichte erstellen (Wo sehe ich die Daten?)
+
+Da dies *benutzerdefinierte* Daten sind, tauchen sie nicht automatisch in den Standard-Berichten auf. Du musst einen **Explorativen Bericht (Explore)** erstellen.
+
+1.  Klicke im linken Menü auf **"Explorative Datenanalyse"** (Explore).
+2.  Erstelle einen neuen Bericht (Klick auf **"Leeres Blatt"**).
+3.  **Variablen hinzufügen** (linke Spalte):
+    *   Klicke bei **Dimensionen** auf das `+` und importiere:
+        *   `Versicherung gebucht`
+        *   `CO2-Neutral`
+        *   `Abonnement`
+    *   Klicke bei **Messwerte** auf das `+` und importiere:
+        *   `Käufe` (Purchase count)
+        *   `Gesamtwert (Custom)`
+        *   `Trinkgeld Prozent`
+4.  **Tabelle bauen** (rechte Spalte "Einstellungen"):
+    *   Ziehe deine Dimensionen (z.B. `Versicherung gebucht`) in den Bereich **Zeilen**.
+    *   Ziehe deine Messwerte (z.B. `Käufe`, `Gesamtwert (Custom)`) in den Bereich **Werte**.
+
+Jetzt siehst du eine Tabelle, z.B.:
+*   `has_insurance = true`: 50 Käufe, 1200€ Umsatz
+*   `has_insurance = false`: 30 Käufe, 500€ Umsatz
+
+Wiederhole dies für CO2 und Abo in eigenen Tabs oder neuen Berichten.
