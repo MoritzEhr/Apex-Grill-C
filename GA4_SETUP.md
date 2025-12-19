@@ -74,6 +74,13 @@ Wenn du eine Liste möchtest, in der **jede Zeile eine Bestellung** ist (wie in 
 | ORDER_12345... | true | false | false | 10 | 25.50€ |
 | ORDER_67890... | false | true | true | 5 | 42.00€ |
 
+> [!WARNING]
+> **"Keine Daten"? Keine Panik!**
+> Die "Explorative Datenanalyse" (Explore) zeigt Daten **nicht in Echtzeit** an. Es dauert oft **24 bis 48 Stunden**, bis neue Events hier auftauchen.
+>
+> **Sofort-Test:**
+> Um zu prüfen, ob es *jetzt gerade* funktioniert, nutze in Google Analytics den Bereich **Verwaltung -> DebugView**. Dort siehst du Events wenige Sekunden nach dem Klick.
+
 ## 5. Deine Wunsch-Ansicht: Der Detaillierte Einkaufs-Bericht
 
 Um genau das zu sehen, was du möchtest ("Ein Einkauf pro Zeile mit allen Infos"), baust du den Bericht so:
