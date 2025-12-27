@@ -33,24 +33,22 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WQJH1QQ03G', {'debug_mode': true});
-
+  
   // URL-Parameter auslesen
   const urlParams = new URLSearchParams(window.location.search);
   const uid = urlParams.get('uid');
 
-  // An GA4 senden als Event, wenn Parameter vorhanden
+  // WICHTIG: Parameter global setzen BEVOR gtag('config') aufgerufen wird
   if (uid) {
-    gtag('event', 'page_view_with_uid', {
-      uid_token: uid,
-      page_location: window.location.href,
-      page_title: document.title
+    gtag('set', {
+      uid_token: uid
     });
   }
 
-</script>    
+  gtag('js', new Date());
+  gtag('config', 'G-WQJH1QQ03G', {'debug_mode': true});
+</script>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3SMP6XS"
@@ -121,7 +119,7 @@
                 </div>
                 <h1 class="hero-title">
                     Apex 
-                    <span class="text-primary"> Grill 2</span>
+                    <span class="text-primary"> Grill 3</span>
                 </h1>
                 <p class="hero-description">
                     Frische Zutaten, authentische Aromen. Von saftigen Dönern bis zu knusprigen Schnitzeln – schmecken Sie den Unterschied!
