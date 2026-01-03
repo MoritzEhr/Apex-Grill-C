@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Grill | Frische & Leckere Essenslieferung</title>
+    <meta name="description" content="Bestellen Sie köstlichen Döner, Burger, Pizza und mehr bei Apex Grill. Frische Zutaten, schnelle Lieferung, fantastischer Geschmack. Jetzt online bestellen!">
+    <meta name="author" content="Apex Grill">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23FF6B35' d='M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1.7 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-7.9-9-13.4-17.2-11.9S160 7.8 160 16V148.2c0 6.1-4.2 11.4-10.2 12.8l-28.4 7.1c-7.3 1.8-12.1 8.6-11 15.9s7.9 12.7 15.3 12.7H224c8.8 0 16-7.2 16-16s-7.2-16-16-16H178.3l17.1-4.3c6.1-1.5 10.2-6.8 10.2-12.8V16z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="stylesC.css">
+
+    
+    <meta property="og:title" content="Apex Grill | Frische & Leckere Essenslieferung">
+    <meta property="og:description" content="Bestellen Sie köstlichen Döner, Burger, Pizza und mehr. Frische Zutaten, schnelle Lieferung!">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ApexGrill">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQJH1QQ03G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WQJH1QQ03G',);
+</script>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="logo-text">
+                    <h1 class="logo-title">Apex Grill</h1>
+                </div>
+            </div>
+
+            <!-- Search Bar - Desktop -->
+            <div class="search-desktop">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Gerichte suchen..." class="search-input">
+                    <button id="clearSearch" class="clear-search-btn" style="display: none;">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="header-actions">
+                <!-- Cart Button -->
+                <button id="cartToggle" class="cart-btn" aria-label="Open cart">
+                    <i class="fa-solid fa-shopping-bag"></i>
+                    <span id="cartBadge" class="cart-badge" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar -->
+        <div id="mobileSearch" class="mobile-search" style="display: none;">
+            <div class="search-wrapper">
+                <input type="text" id="mobileSearchInput" placeholder="Gerichte suchen..." class="search-input">
+                <button id="clearMobileSearch" class="clear-search-btn" style="display: none;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=1200&h=500&fit=crop" alt="Köstlicher Döner-Kebab mit frischem Gemüse" class="hero-image">
+            <div class="hero-overlay-1"></div>
+            <div class="hero-overlay-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badges">
+                    <span class="badge badge-success">
+                        <i class="fa-solid fa-circle badge-pulse"></i>
+                        Jetzt geöffnet
+                    </span>
+                    <span class="badge badge-primary">
+                        <i class="fa-solid fa-bolt"></i>
+                        Schnelle Lieferung
+                    </span>
+                </div>
+                <h1 class="hero-title">
+                    Apex 
+                    <span class="text-primary"> Grill</span>
+                </h1>
+                <p class="hero-description">
+                    Frische Zutaten, authentische Aromen. Von saftigen Dönern bis zu knusprigen Schnitzeln – schmecken Sie den Unterschied!
+                </p>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <span class="info-value">4.8</span>
+                        <span class="info-label">(2.847 Bewertungen)</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-truck text-primary"></i>
+                        <span class="info-value">20-35 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Bar -->
+    <div class="category-bar">
+        <div class="container">
+            <div class="category-scroll">
+                <button class="category-btn active" data-category="all">
+                    <i class="fa-solid fa-grip"></i>
+                    Alle Artikel
+                </button>
+                <!-- Categories will be inserted by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Grid -->
+    <section class="menu-section">
+        <div class="container">
+            <div id="searchResults" class="search-results" style="display: none;">
+                <h2 class="search-results-title"></h2>
+                <p class="search-results-count"></p>
+            </div>
+            <div id="menuGrid" class="menu-grid">
+                <!-- Menu items will be inserted by JS -->
+            </div>
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <div class="empty-icon">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+                <h3>Keine Gerichte gefunden</h3>
+                <p>Versuchen Sie einen anderen Suchbegriff</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div>
+                            <h3 class="footer-title">Apex Grill</h3>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Seit 2010 servieren wir den frischesten und köstlichsten Döner, Burger, Pizza und mehr. Hochwertige Zutaten, authentische Rezepte.
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Kontaktieren Sie uns</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot text-primary"></i>
+                            Hauptstraße 123, 10115 Berlin
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            +49 30 1234567
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            info@ApexGrill.de
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Öffnungszeiten</h4>
+                    <ul class="footer-hours">
+                        <li>
+                            <span>Mo - Do</span>
+                            <span>10:00 - 01:00</span>
+                        </li>
+                        <li>
+                            <span>Fr - Sa</span>
+                            <span>11:00 - 03:00</span>
+                        </li>
+                        <li>
+                            <span>Sonntag</span>
+                            <span>12:00 - 02:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Apex Grill. Alle Rechte vorbehalten.
+                </p>
+                <div class="footer-links">
+                    <a href="#" id="privacyLink" class="footer-link">Datenschutz</a>
+                    <a href="#" id="termsLink" class="footer-link">AGB</a>
+                    <a href="#" id="imprintLink" class="footer-link">Impressum</a>
+                </div>
+            </div>
+
+            <!-- Analytics Banner -->
+            <div class="analytics-banner">
+                <div class="analytics-banner-content">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p class="analytics-banner-text">
+                        Bestelldaten werden zu Analysezwecken mit Google Analytics aufgezeichnet, um unseren Service zu verbessern.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cartOverlay" class="cart-overlay" style="display: none;"></div>
+    <aside id="cartSidebar" class="cart-sidebar">
+        <!-- Cart content will be inserted by JS -->
+    </aside>
+
+    <!-- Privacy Policy Popup -->
+    <div id="privacyPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button id="closePrivacyPopup" class="popup-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h2 class="popup-title">Datenschutzerklärung</h2>
+            <div class="popup-body">
+                <h3>1. Datenschutz auf einen Blick</h3>
+                <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+                <h3>2. Datenerfassung auf unserer Website</h3>
+                <p>Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+                <h3>3. Ihre Rechte</h3>
+                <p>Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imprint Popup -->
+    <div id="imprintPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button id="closeImprintPopup" class="popup-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h2 class="popup-title">Impressum</h2>
+            <div class="popup-body">
+                <h3>Angaben gemäß § 5 TMG</h3>
+                <p>Apex Grill<br>
+                Hauptstraße 123<br>
+                10115 Berlin</p>
+
+                <h3>Vertreten durch:</h3>
+                <p>Max Mustermann</p>
+
+                <h3>Kontakt:</h3>
+                <p>Telefon: +49 30 1234567<br>
+                E-Mail: info@ApexGrill.de</p>
+
+                <h3>Umsatzsteuer-ID:</h3>
+                <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                DE123456789</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms and Conditions Popup -->
+    <div id="termsPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button id="closeTermsPopup" class="popup-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h2 class="popup-title">Allgemeine Geschäftsbedingungen</h2>
+            <div class="popup-body">
+                <h3>1. Geltungsbereich</h3>
+                <p>Für alle Bestellungen über die Webseite von Apex Grill gelten die nachfolgenden Allgemeinen Geschäftsbedingungen (AGB). Maßgebend ist jeweils die zum Zeitpunkt der Bestellung gültige Fassung der AGB.</p>
+                
+                <h3>2. Vertragspartner</h3>
+                <p>Der Kaufvertrag kommt zustande mit Apex Grill, Hauptstraße 123, 10115 Berlin. Bei Fragen, Reklamationen und Beanstandungen erreichen Sie unseren Kundendienst werktags von 9:00 bis 17:00 Uhr unter der Telefonnummer +49 30 1234567 sowie per E-Mail unter info@ApexGrill.de.</p>
+
+                <h3>3. Angebot und Vertragsschluss</h3>
+                <p>Die Darstellung der Produkte auf der Webseite stellt kein rechtlich bindendes Angebot, sondern eine Aufforderung zur Bestellung dar. Durch Anklicken des Buttons „Jetzt bestellen" geben Sie eine verbindliche Bestellung der auf der Bestellseite aufgelisteten Waren ab. Der Kaufvertrag kommt zustande, wenn wir Ihre Bestellung durch eine Auftragsbestätigung per E-Mail unmittelbar nach dem Erhalt Ihrer Bestellung annehmen.</p>
+
+                <h3>4. Preise und Versandkosten</h3>
+                <p>Die auf den Produktseiten genannten Preise enthalten die gesetzliche Mehrwertsteuer und sonstige Preisbestandteile. Zusätzlich zu den angegebenen Preisen berechnen wir für die Lieferung je nach Liefergebiet eine Pauschale.</p>
+
+                <h3>5. Zahlung</h3>
+                <p>Die Zahlung erfolgt wahlweise per Kreditkarte, PayPal oder Barzahlung bei Lieferung. Wir behalten uns vor, einzelne Zahlungsarten auszuschließen.</p>
+
+                <h3>6. Eigentumsvorbehalt</h3>
+                <p>Bis zur vollständigen Bezahlung bleibt die Ware unser Eigentum.</p>
+
+                <h3>7. Abonnement</h3>
+                <p>Wenn Sie sich für unser Abonnement entscheiden, ist die erste Woche kostenlos. Danach kostet das Abonnement 4,99€ pro Monat. Das Abonnement ist jederzeit kündbar.</p>
+
+                <h3>8. Schlussbestimmungen</h3>
+                <p>Sollte eine Bestimmung dieser Allgemeinen Geschäftsbedingungen unwirksam sein oder werden, so wird dadurch die Gültigkeit der übrigen Bestimmungen nicht berührt. Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div id="orderModal" class="order-modal" style="display: none;">
+        <div class="order-modal-overlay"></div>
+        <div class="order-modal-content">
+            <div class="order-success-icon">
+                <div class="success-circle">
+                    <div class="success-inner">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="order-modal-body">
+                <h2 class="order-modal-title">Bestellung bestätigt!</h2>
+                <p class="order-modal-text">
+                    Vielen Dank für Ihre Bestellung! Ihr leckeres Essen wird zubereitet und Ihnen in Kürze geliefert.
+                </p>
+                <div class="order-details">
+                    <div class="order-detail-item">
+                        <i class="fa-solid fa-clock text-primary"></i>
+                        <span>ca. 25-35 min</span>
+                    </div>
+                    <div class="order-detail-item">
+                        <i class="fa-solid fa-location-dot text-primary"></i>
+                        <span>Live-Verfolgung</span>
+                    </div>
+                </div>
+                <button id="closeOrderModal" class="order-modal-btn">Weiter einkaufen</button>
+            </div>
+            <div class="order-modal-deco-1"></div>
+            <div class="order-modal-deco-2"></div>
+        </div>
+    </div>
+
+
+
+    <script src="scriptC.js"></script>
+</body>
+</html>
